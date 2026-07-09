@@ -98,3 +98,7 @@ Solution:
 - Tuned VM resource allocation (CPU, RAM)  
 - Limited concurrent services  
 - Used snapshots to stabilize known-good states
+
+## Security Notes
+- This project is intended for learning, personal security practice, and portfolio demonstration.
+
