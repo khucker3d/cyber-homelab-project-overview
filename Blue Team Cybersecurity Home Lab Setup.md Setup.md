@@ -25,7 +25,8 @@ In addition to standing up core infrastructure, the project involved troubleshoo
 
 
 ## Lab Phases
-*Note: I have detailed documentation on my personal Confluence site*
+***Documentation Scope:** This public repository contains a high-level, sanitized overview of the project. More detailed internal documentation exists separately, including step-by-step walkthroughs, configuration procedures, validation steps, troubleshooting notes, and operational runbooks. Sensitive environment-specific details have been intentionally excluded for security reasons.**
+
 ### Phase 1: Home Cybersecurity Lab
 1. Established the physical and host-level foundation for the lab environment.
 
@@ -56,6 +57,3 @@ In addition to standing up core infrastructure, the project involved troubleshoo
 - Validate logging pipelines after updates  
 - Monitor system resource usage across VMs  
 - Keep backups of critical lab components
-
-## Security Notes
-- This project is intended for learning, personal security practice, and portfolio demonstration.
