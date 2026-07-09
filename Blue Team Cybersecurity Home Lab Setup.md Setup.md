@@ -57,3 +57,6 @@ In addition to standing up core infrastructure, the project involved troubleshoo
 - Validate logging pipelines after updates  
 - Monitor system resource usage across VMs  
 - Keep backups of critical lab components
+
+## Security Notes
+- This project is intended for learning, personal security practice, and portfolio demonstration.
