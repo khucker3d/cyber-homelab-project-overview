@@ -25,6 +25,7 @@ In addition to standing up core infrastructure, the project involved troubleshoo
 
 
 ## Lab Phases
+
 ***Documentation Scope:** This public repository contains a high-level, sanitized overview of the project. More detailed internal documentation exists separately, including step-by-step walkthroughs, configuration procedures, validation steps, troubleshooting notes, and operational runbooks. Sensitive environment-specific details have been intentionally excluded for security reasons.**
 
 ### Phase 1: Home Cybersecurity Lab
