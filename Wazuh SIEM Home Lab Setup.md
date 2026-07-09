@@ -21,7 +21,9 @@ Endpoint activity on Kali Linux generates system and security logs > Filebeat co
 7. Integrated additional log sources (Zeek/Suricata)  
 
 ## Setup Steps:
-*Note: I have detailed documentation on my personal Confluence site*
+
+***Documentation Scope:** This public repository contains a high-level, sanitized overview of the project. More detailed internal documentation exists separately, including step-by-step walkthroughs, configuration procedures, validation steps, troubleshooting notes, and operational runbooks. Sensitive environment-specific details have been intentionally excluded for security reasons.**
+
 1. Install Wazuh All-in-One (Ubuntu)
 Deployed Wazuh server, including Elasticsearch and Kibana components.
 2. Configured VM networking between Ubuntu and Kali Linux
@@ -36,7 +38,7 @@ Deployed Wazuh server, including Elasticsearch and Kibana components.
 9. Connect Filebeat to Kibana and validate log visualization and dashboard functionality.
 10. Add additional log sources (Zeek and Suricata) to expand detection visibility.
 
-Results:
+**Results:**
 - Successfully built and stabilized my first SIEM home lab  
 - Established end-to-end log pipeline from endpoint to SIEM  
 - Resolved real-world issues across networking, log shipping, and visibility  
@@ -44,53 +46,55 @@ Results:
 - Created a repeatable foundation for future blue team lab expansion
 
 ## Issues and Solutions
-VM Networking Misconfiguration:
+### VM Networking Misconfiguration:
 Issue: VirtualBox networking was initially misconfigured, preventing communication between Ubuntu (Wazuh server) and Kali Linux.
 - Unable to ping between VMs  
 - No logs reaching Wazuh  
 - Filebeat appeared functional but no data ingestion  
+
 Solution:
 - Reconfigured network adapters using Host-Only + NAT setup  
 - Verified IP addressing and subnet alignment  
 - Validated connectivity using ping and netstat
 
-Filebeat Not Shipping Logs:
+### Filebeat Not Shipping Logs:
 Issue: Filebeat service was running, but logs were not appearing in Wazuh or Elasticsearch.
 - Filebeat service active  
 - No logs visible in Kibana  
 - No indexing activity  
+
 Solution:
 - Validated Filebeat configuration file paths  
 - Corrected output configuration to point to Wazuh  
 - Restarted Filebeat service  
 - Confirmed log flow using service logs  
 
-Log Visibility in Kibana:
+### Log Visibility in Kibana:
 Issue: Logs were being generated but not visible in dashboards.
 - No data in the Discover view  
 - Empty dashboards  
+
 Solution:
 - Configured correct index patterns in Kibana  
 - Verified time range settings  
 - Confirmed ingestion using raw index queries  
 
-Kali Linux Log Source Integration
+### Kali Linux Log Source Integration
 Issue: Kali Linux logs were not initially forwarding correctly.
 - No endpoint logs in Wazuh  
 - Inconsistent log data  
+
 Solution:
 - Configured proper Filebeat inputs on Kali  
 - Validated log file paths  
 - Ensured network connectivity to the Wazuh server  
 
-General Lab Stability Issues
+### General Lab Stability Issues
 Issue: Running multiple VMs on a laptop caused performance bottlenecks.
 - Slow system performance  
 - VM instability during heavy logging  
+
 Solution:
 - Tuned VM resource allocation (CPU, RAM)  
 - Limited concurrent services  
 - Used snapshots to stabilize known-good states
-
-## Security Notes
-- This project is intended for learning, personal security practice, and portfolio demonstration.
