@@ -80,8 +80,13 @@ This device was previously issued by a former employer and later transferred to 
   - BitLocker fully enabled
   - TPM ready
   - Secure Boot active
+
 **Result:**
 - Delivered a clean, trusted endpoint suitable for cybersecurity lab environments.
 - Demonstrated strong risk-based decision-making in handling encrypted enterprise assets, along with practical experience in secure device decommissioning and system hardening.
 
 ***Documentation Scope:** This public repository contains a high-level, sanitized overview of the project. More detailed internal documentation exists separately, including step-by-step walkthroughs, configuration procedures, validation steps, troubleshooting notes, and operational runbooks. Sensitive environment-specific details have been intentionally excluded for security reasons.**
+
+## Security Notes
+- This project is intended for learning, personal security practice, and portfolio demonstration.
+
