@@ -1,4 +1,4 @@
-# Blue Team Cybersecurity Home Lab Setup
+# Blue Team Cybersecurity Home Lab Setup (WIP-Reworking Home CyberLab setup) 
 Author: Kellie Hucker
 
 ## Overview
